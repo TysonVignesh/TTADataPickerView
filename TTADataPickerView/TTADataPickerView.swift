@@ -246,29 +246,29 @@ extension TTADataPickerView {
     
     // MARK: - Public Functions
     // MARK: - Global apperance properties functions
-    public dynamic func setConfirmButtonAttributes(att: [String: Any]?) {
+    @objc public dynamic func setConfirmButtonAttributes(att: [NSAttributedStringKey: Any]?) {
         toolBar.confirmButton.setTitleTextAttributes(att, for: .normal)
     }
     
-    public dynamic func setCancelButtonAttributes(att: [String: Any]?) {
+    @objc public dynamic func setCancelButtonAttributes(att: [NSAttributedStringKey: Any]?) {
         toolBar.cancelButton.setTitleTextAttributes(att, for: .normal)
     }
     
-    public dynamic func setToolBarBarTintColor(color: UIColor?) {
+    @objc public dynamic func setToolBarBarTintColor(color: UIColor?) {
         toolBar.barTintColor = color
     }
     
-    public dynamic func setToolBarTintColor(color: UIColor?) {
+    @objc public dynamic func setToolBarTintColor(color: UIColor?) {
         toolBar.tintColor = color
     }
     
-    public dynamic func setTitleFont(font: UIFont) {
+    @objc public dynamic func setTitleFont(font: UIFont) {
 //        let apperance = TTADataPickerToolBar.appearance()
 //        apperance.titleButton.font = font
         toolBar.titleButton.font = font
     }
     
-    public dynamic func setTitleColor(color: UIColor) {
+    @objc public dynamic func setTitleColor(color: UIColor) {
 //        let apperance = TTADataPickerToolBar.appearance()
 //        apperance.titleButton.titleColor = color
         toolBar.titleButton.titleColor = color

@@ -78,16 +78,16 @@ fileprivate extension TTADataPickerTitleBarButtonItem {
     func layoutViews() {
         if #available(iOS 11.0, *) {
             titleView.translatesAutoresizingMaskIntoConstraints = false
-            titleView.setContentHuggingPriority(UILayoutPriorityDefaultLow - 1, for: .vertical)
-            titleView.setContentHuggingPriority(UILayoutPriorityDefaultLow - 1, for: .horizontal)
-            titleView.setContentHuggingPriority(UILayoutPriorityDefaultHigh - 1, for: .vertical)
-            titleView.setContentHuggingPriority(UILayoutPriorityDefaultHigh - 1, for: .horizontal)
+            titleView.setContentHuggingPriority(UILayoutPriority.defaultLow - 1, for: .vertical)
+            titleView.setContentHuggingPriority(UILayoutPriority.defaultLow - 1, for: .horizontal)
+            titleView.setContentHuggingPriority(UILayoutPriority.defaultHigh - 1, for: .vertical)
+            titleView.setContentHuggingPriority(UILayoutPriority.defaultHigh - 1, for: .horizontal)
             
             titleButton.translatesAutoresizingMaskIntoConstraints = false
-            titleButton.setContentHuggingPriority(UILayoutPriorityDefaultLow - 1, for: .vertical)
-            titleButton.setContentHuggingPriority(UILayoutPriorityDefaultLow - 1, for: .horizontal)
-            titleButton.setContentHuggingPriority(UILayoutPriorityDefaultHigh - 1, for: .vertical)
-            titleButton.setContentHuggingPriority(UILayoutPriorityDefaultHigh - 1, for: .horizontal)
+            titleButton.setContentHuggingPriority(UILayoutPriority.defaultLow - 1, for: .vertical)
+            titleButton.setContentHuggingPriority(UILayoutPriority.defaultLow - 1, for: .horizontal)
+            titleButton.setContentHuggingPriority(UILayoutPriority.defaultHigh - 1, for: .vertical)
+            titleButton.setContentHuggingPriority(UILayoutPriority.defaultHigh - 1, for: .horizontal)
             
             let top = NSLayoutConstraint(item: titleButton, attribute: .top, relatedBy: .equal, toItem: titleView, attribute: .top, multiplier: 1, constant: 0)
             let bottom = NSLayoutConstraint(item: titleButton, attribute: .bottom, relatedBy: .equal, toItem: titleView, attribute: .bottom, multiplier: 1, constant: 0)

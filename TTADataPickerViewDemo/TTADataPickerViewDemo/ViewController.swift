@@ -21,12 +21,12 @@ class ViewController: UIViewController {
         
         // config the TTADataPickerView's apperance
         let apperance = TTADataPickerView.appearance()
-        apperance.setConfirmButtonAttributes(att: [NSForegroundColorAttributeName: UIColor.darkGray])
-        apperance.setCancelButtonAttributes(att: [NSForegroundColorAttributeName: UIColor.darkGray])
+        apperance.setConfirmButtonAttributes(att: [kCTForegroundColorAttributeName as NSAttributedStringKey: UIColor.darkGray])
+        apperance.setCancelButtonAttributes(att: [kCTForegroundColorAttributeName as NSAttributedStringKey: UIColor.darkGray])
         apperance.setToolBarTintColor(color: .lightGray)
         apperance.setToolBarBarTintColor(color: UIColor(white: 0.9, alpha: 0.5))
         apperance.setTitleFont(font: UIFont.systemFont(ofSize: 14))
-        apperance.setTitleColor(color: UIColor(colorLiteralRed: 0.0, green: 0.5, blue: 1.0, alpha: 1.0))
+        apperance.setTitleColor(color: UIColor.init(red: 0.0, green: 0.5, blue: 1.0, alpha: 1.0))
         
     }
     
